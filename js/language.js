@@ -23,6 +23,7 @@ export const dictionary = {
     'hero_date': 'السبت، ٢٤ أكتوبر ٢٠٢٦',
     'hero_location': 'القاهرة، جمهورية مصر العربية',
     'hero_scroll': 'استكشف دعوة الزفاف',
+    'open_invitation_text': 'افتح الدعوة الملكية',
 
     'couple_badge': 'العروسان',
     'couple_title': 'قلبان.. رحلة واحدة',
@@ -155,6 +156,7 @@ export const dictionary = {
     'hero_date': 'SATURDAY, OCTOBER 24, 2026',
     'hero_location': 'CAIRO, ARAB REPUBLIC OF EGYPT',
     'hero_scroll': 'DISCOVER THE EXPERIENCE',
+    'open_invitation_text': 'OPEN ROYAL INVITATION',
 
     'couple_badge': 'THE COUPLE',
     'couple_title': 'Two Hearts, One Eternal Journey',

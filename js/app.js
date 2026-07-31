@@ -52,6 +52,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   langManager.onChange(() => updateAudioLabel());
 
+  // Royal Entrance Overlay Handler
+  const entranceOverlay = document.getElementById('entrance-overlay');
+  const openInvitationBtn = document.getElementById('open-invitation-btn');
+
+  if (openInvitationBtn && entranceOverlay) {
+    openInvitationBtn.addEventListener('click', () => {
+      entranceOverlay.classList.add('closing');
+
+      if (bgAudio) {
+        bgAudio
+          .play()
+          .then(() => {
+            isPlaying = true;
+            if (audioBtn) audioBtn.classList.add('playing');
+            updateAudioLabel();
+          })
+          .catch((err) => console.warn('Audio auto-play prevented:', err));
+      }
+
+      setTimeout(() => {
+        entranceOverlay.style.display = 'none';
+      }, 1200);
+    });
+  }
+
   if (audioBtn && bgAudio) {
     audioBtn.addEventListener('click', () => {
       if (isPlaying) {

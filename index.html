@@ -8,6 +8,10 @@
   <title>Tareq & Layla — Aurora Luxury Digital Invitation | RAB6</title>
   <meta name="description" content="Digital wedding invitation for Tareq & Layla, October 24, 2026 at Four Seasons Hotel Cairo at Nile Plaza." />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+
   <!-- OpenGraph Metadata -->
   <meta property="og:title" content="Tareq & Layla — Royal Wedding Invitation" />
   <meta property="og:description" content="Join us for the celebration of Tareq & Layla at Four Seasons Nile Plaza Cairo." />
@@ -56,6 +60,34 @@
   <!-- Background Shader Canvas Layers -->
   <canvas id="aurora-canvas" aria-hidden="true"></canvas>
   <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Royal Aurora Entrance Overlay -->
+  <div id="entrance-overlay" class="entrance-overlay" role="dialog" aria-label="Royal Invitation Entrance">
+    <div class="entrance-bg-glow"></div>
+
+    <div class="entrance-card glass-card glass-card--gold">
+      <div class="entrance-monogram">
+        <div class="entrance-monogram-ring"></div>
+        <span class="gold-gradient-text font-display">T & L</span>
+      </div>
+
+      <p class="font-serif entrance-bismillah" data-i18n="hero_bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      
+      <h1 class="entrance-names hero-title-names">
+        <span class="gold-gradient-text" data-i18n="hero_groom">طارق</span>
+        <span class="cyan-gradient-text" data-i18n="hero_and">و</span>
+        <span class="cyan-gradient-text" data-i18n="hero_bride">ليلى</span>
+      </h1>
+
+      <p class="font-serif entrance-subtitle" data-i18n="hero_invitation_badge">دعوة زفاف خاصة</p>
+
+      <button id="open-invitation-btn" class="entrance-seal-btn" aria-label="Open Invitation">
+        <div class="seal-outer-ring"></div>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8EEBE3" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/></svg>
+        <span data-i18n="open_invitation_text">افتح الدعوة الملكية</span>
+      </button>
+    </div>
+  </div>
 
   <!-- Sticky Header Navigation -->
   <header class="site-header" role="banner">
@@ -173,9 +205,9 @@
       </div>
 
       <div class="reveal-up delay-3">
-        <h1 class="font-display" style="font-size: var(--text-5xl); font-weight: 300; line-height: 1.1;">
+        <h1 class="hero-title-names">
           <span class="gold-gradient-text" data-i18n="hero_groom">طارق</span>
-          <span class="cyan-gradient-text font-serif" style="font-style: italic; margin-inline: 0.5rem;" data-i18n="hero_and">و</span>
+          <span class="cyan-gradient-text" data-i18n="hero_and">و</span>
           <span class="cyan-gradient-text" data-i18n="hero_bride">ليلى</span>
         </h1>
       </div>
