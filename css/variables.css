@@ -1,0 +1,93 @@
+/* ============================================================
+   AURORA LUXURY INVITATION — Design Tokens (variables.css)
+   ============================================================ */
+
+:root {
+  /* ── Color Palette (Dark Obsidian & Aurora Mesh) ── */
+  --color-bg-base: #040D0A;
+  --color-bg-surface-1: #0A1D1A;
+  --color-bg-surface-2: #122B27;
+  --color-bg-surface-3: #1A3833;
+  --color-[#040D0A]: #040D0A;
+  --color-bg-glass: rgba(10, 29, 26, 0.60);
+  --color-bg-[#0A1D1A]: #0A1D1A;
+
+  /* ── Metallic Accents ── */
+  --color-gold-base: #E2C799;
+  --color-gold-light: #FAF5EB;
+  --color-gold-dark: #B89762;
+  --color-cyan-glow: #8EEBE3;
+  --color-emerald-glow: #34D399;
+
+  /* ── Text Tokens ── */
+  --color-text-primary: #F5F9F8;
+  --color-text-secondary: #C2D6D3;
+  --color-text-muted: #7A9994;
+
+  /* ── Glass Borders & Translucency ── */
+  --glass-bg: rgba(10, 29, 26, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-border-gold: rgba(226, 199, 153, 0.35);
+  --glass-border-cyan: rgba(142, 235, 227, 0.30);
+  --glass-blur-sm: 8px;
+  --glass-blur-md: 16px;
+  --glass-blur-lg: 24px;
+  --glass-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  /* ── Typography Families ── */
+  --font-display-en: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans-en: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-serif-ar: 'Amiri', 'Aref Ruqaa', 'Georgia', serif;
+  --font-sans-ar: 'Cairo', 'Tajawal', system-ui, sans-serif;
+
+  /* ── Default Active Fonts (RTL / LTR dynamically bound) ── */
+  --font-family-display: var(--font-display-en);
+  --font-family-body: var(--font-sans-en);
+
+  /* ── Fluid Typography Scale ── */
+  --text-xs: clamp(0.70rem, 0.9vw, 0.78rem);
+  --text-sm: clamp(0.82rem, 1.1vw, 0.88rem);
+  --text-base: clamp(0.95rem, 1.3vw, 1.05rem);
+  --text-lg: clamp(1.10rem, 1.5vw, 1.25rem);
+  --text-xl: clamp(1.30rem, 2.0vw, 1.60rem);
+  --text-2xl: clamp(1.60rem, 2.8vw, 2.20rem);
+  --text-3xl: clamp(2.20rem, 4.0vw, 3.20rem);
+  --text-4xl: clamp(3.00rem, 6.0vw, 4.80rem);
+  --text-5xl: clamp(4.00rem, 8.5vw, 7.00rem);
+
+  /* ── Spacing Tokens ── */
+  --space-1: 0.25rem;
+  --space-2: 0.50rem;
+  --space-3: 0.75rem;
+  --space-4: 1.00rem;
+  --space-6: 1.50rem;
+  --space-8: 2.00rem;
+  --space-12: 3.00rem;
+  --space-16: 4.00rem;
+  --space-24: 6.00rem;
+
+  /* ── Radius Tokens ── */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2.00rem;
+  --radius-full: 9999px;
+
+  /* ── Transitions & Durations ── */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-medium: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ── Z-Index Layers ── */
+  --z-canvas: 0;
+  --z-[#040D0A]: 10;
+  --z-header: 40;
+  --z-modal: 50;
+  --z-toast: 60;
+}
+
+/* RTL Font Overrides */
+[dir="rtl"] {
+  --font-family-display: var(--font-serif-ar);
+  --font-family-body: var(--font-sans-ar);
+}
